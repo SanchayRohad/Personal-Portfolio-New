@@ -423,6 +423,25 @@ a {
 
 /* Photos */
 
+.masonry-layout {
+    display: block;
+    margin: 50px auto;
+    column-gap: 1.4em;
+}
+
+.masonry-layout .brick {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1.4em;
+}
+
+.masonry-layout .brick img {
+    transition: all .5s ease-in-out;
+    backface-visibility: hidden;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
 
 .more-info {
     color: #36ebdc;
@@ -539,59 +558,16 @@ a {
     }
 }
 
-.btn{
-    position: relative;
-    width: 380px;
-    height: 86px;
-    font-size: 36px;
-    font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(45deg, transparent 5%, #791126 5%);
-    border: 0;
-    color :#fff;
-    b:100px;
-    letter-spacing:3px;
-    line-height: 88px;
-    box-shadow :6px 0 0 #00e6f6;
-    outline: transparent;
+/* Photos layout for medium and larger screens */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .masonry-layout {
+        column-count: 2;
+    }
 }
 
-.btn:hover{
-  animation:  glitch 1s steps(2, end);
-}
-  
-@keyframes glitch{
-  0%{
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px)}
-  10%{
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px)}
-  20%{
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px)}
-  30%{
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px)}
-  40%{
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px)}
-  50%{
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px)}
-  60%{
-    clip-path: var(--slice-4);
-    transform :translate(5px, 10px)}
-  70%{
-    clip-path :var(--slice-2);
-    transform: translate(-10px, 10px)}
-  80%{
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px)}
-  90%{
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px)};
-  100%{
-    clip-path: var(--slice-1);
-    transform: translate(0)
+@media only screen and (min-width: 1024px) {
+    .masonry-layout {
+        column-count: 3;
     }
 }
