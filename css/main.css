@@ -16,8 +16,8 @@
   }
   
   .scene { 
-    animation: xwing 21s ease 1 0s normal forwards,
-               xwing-loop 20s ease infinite 24s normal forwards; 
+    animation: xwing 14s ease 1 0s normal forwards,
+               xwing-loop 13s ease infinite 17s normal forwards; 
   }
   
   .stars {
@@ -30,7 +30,7 @@
    url(https://s.cdpn.io/1137/hori.png),url(https://s.cdpn.io/1137/stars_5.png);
     background-repeat: repeat-x,repeat-x repeat-y;
     transform:translate3D(-5em, 0em, 0);
-    animation: stars 21s ease;
+    animation: stars 14s ease;
   }
   
   /* Custom styles */
@@ -51,7 +51,7 @@
   .cyl-16,
   .cyl-17 {
     opacity: .2;
-    animation: jet 20s ease 1 0s;
+    animation: jet 13s ease 1 0s;
   }
   
   .cyl-14 .side,
@@ -144,7 +144,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: rgba(255,255,255,.8);
-    animation: build 4s ease 20s normal forwards;
+    animation: build 4s ease 13s normal forwards;
   }
   
   @keyframes build {
@@ -159,7 +159,7 @@
   
   .making {
     opacity: 0;
-    animation: btn 1s ease 1 22s normal forwards;
+    animation: btn 1s ease 1 15s normal forwards;
   }
   
   .build-with .btn {
@@ -170,18 +170,9 @@
     font-size: 15px;
     color: white;
     background-color: #01233a;
-<<<<<<< HEAD
     padding: 15px 15px;
     border-radius: 10px;
     animation: btn .5s ease 1 16.5s normal forwards;
-=======
-    padding: 20px 32px;
-    border-radius: 3px;
-    animation: btn .5s ease 1 23.5s normal forwards;
-<<<<<<< HEAD
->>>>>>> parent of 0463e83 (new pages and UI)
-=======
->>>>>>> parent of 0463e83 (new pages and UI)
   }
   
   @keyframes btn {

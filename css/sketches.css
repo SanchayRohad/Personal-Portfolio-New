@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("https://s.cdpn.io/1137/stars_5.png");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow panels to wrap to the next row on small screens */
+    gap: 1rem;
+    width: 45rem;
+}
+
+.panel {
+    position: relative;
+    width: 3rem;
+    border-radius: 50px;
+    height: 400px;
+    overflow: hidden;
+    transition: .4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .3);
+    flex:2; /* Adjust the flex value for spacing between panels */
+}
+
+.panel img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .panel {
+        flex: 2; /* Allow panels to take full width on small screens */
+    }
+}
+
+.panel:hover {
+    flex: 40%;
+    transform: scale(1.2);
+    transform-origin: center bottom;
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.social-links {
+    margin: 30px auto;
+    grid-template-columns: repeat(4, 70px);
+    justify-content: center;
+    display: block;
+}
+.social-links h2 {
+    text-align: center;
+    color: #EFF2F1;
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+}
+
+.social-links a {
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 15px;
+    left: 58%;
+}
+
+.social-links a img {
+    background-color:#EFF2F1 !important;
+    padding: 10px;
+    margin: 0 5px;
+    width: auto;
+    height: 50px;
+    position: relative;
+}
+
+.social-links a img:hover{
+    background-color: #BC4E69 !important;
+    transition: all 0.2s ease-out;
+}
+
