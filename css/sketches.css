@@ -60,27 +60,22 @@ body {
 }
 
 .social-links {
-    margin: 30px auto;
-    grid-template-columns: repeat(4, 70px);
+    color:aliceblue;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
 }
 .social-links h2 {
-    text-align: center;
-    color: #EFF2F1;
-    position: absolute;
-    bottom: 30px;
-    left: 40%;
+    margin-right: 10px;
 }
 
-.social-links a {
-    text-align: center;
-    text-decoration: none;
-    position: absolute;
-    bottom: 15px;
-    left: 58%;
+.socials {
+    margin-left: 10px; /* Push the image to the right */
 }
-
 .social-links a img {
     background-color:#EFF2F1 !important;
     padding: 10px;
